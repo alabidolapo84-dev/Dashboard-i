@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>🧠 FocusFlow</h2>
+      <nav>
+        <ul>
+          <li>📋 Tasks</li>
+          <li>🔥 Habits</li>
+          <li>⏱️ Time</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="tasks">
+        <h3>Today's Tasks</h3>
+        <ul id="task-list"></ul>
+        <input type="text" id="task-input" placeholder="Add a task..." />
+        <button onclick="addTask()">Add Task</button>
+      </section>
+
+      <section class="habits">
+        <h3>Habit Tracker</h3>
+        <div class="habit">
+          <label>Drink Water</label>
+          <input type="checkbox" />
+        </div>
+        <div class="habit">
+          <label>Exercise</label>
+          <input type="checkbox" />
+        </div>
+        <div class="habit">
+          <label>Read</label>
+          <input type="checkbox" />
+        </div>
+      </section>
+
+      <section class="time-summary">
+        <h3>Time Summary</h3>
+        <p>Focus Time: <span id="focus-time">0</span> hrs</p>
+        <button onclick="increaseTime()">+1 hr</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
